@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>My Selfie Tech</title>
+</head>
+<body>
+<h1>MySelfie Tech</h1><br><br><br>
+	<!--div for front page Visibility is visible as this is the first page visible initially-->
+	<div id="main-front-page" style="visibility:visible;">
+	<button id="btnLogin">Login</button>
+	<button id="btnSignUp">Sign Up</button>
+	</div>
+
+	<!--div for login with email and password. Visbility is hidden initially and later manipulated through jquery-->
+       <div id="login-page" style="visibility:hidden;">
+	Login
+	  <form id="frm-login">
+             <input id="login-email" type="email" placeholder="email"><br>
+	     <input id="login-password" type="password" placeholder="password"><br>
+	      <input id="btnSubmitLogin" type="submit">
+	  </form>	
+	   <span id="loginErrMsg"></span>
+	      <button id="btnBackLogin">Back</button>
+	</div>
+
+	
+	<!--div for sign up with name, email and password-->
+	<div id="signup-page" style="visibility:hidden;">
+	Sign Up
+	  <form id="frm-sign-up">
+             <input id="sign-up-name" type="text" placeholder="name"><br>
+	     <input id="sign-up-email" type="email" placeholder="email"><br>
+	     <input id="sign-up-password" type="password" placeholder="password"><br>
+	      <input id="btnSubmitSignUp" type="submit">
+	  </form>		
+	      <button id="btnBackSignUp">Back</button>
+	</div>
+
+
+	<!--div for Welcome page on successful login-->
+        <div id="welcome-page" style="visibility:hidden;">
+               <span id="welcome-span">Welocme to </span><span id="welcomeName"></span>
+		<button id="btnLogOut">Logout</button>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+    </script>
+    <script src="script.js" type="text/javascript"></script>
+</body>
+
+</html>
